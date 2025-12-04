@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+}
+
+body {
+    font-family:"Poppins", sans-serif;
+}
+
+.jumbotron {
+    padding: 80px;
+    text-align: center;
+    min-height: 300px;
+    line-height: 1.4;
+    background-color: #3a74c9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.jumbotron h1 {
+    font-size: 42px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.jumbotron p {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+nav  {
+    background-color: #3a73c9ce; 
+    padding: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
+    gap: 3.5rem;
+
+}
+
+nav li a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:hover {
+    color: #303161c4;
+}
+
+main {
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 0.5rem;
+    margin-right:0.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.content {
+    padding: 10px;
+    line-height: 2.0;
+    flex: 3;
+}
+
+aside {
+    flex: 1;
+    padding: 10px;
+    max-height: 500px;
+  
+    margin-bottom: 20px;
+}
+
+.card header {
+    margin-bottom: 10px;
+}
+
+
+
+.card header h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card .profil-img {
+    margin-top: 20px;
+}
+
+.card table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+.style-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profil-img {
+    width: 70%;
+    height: 240px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card figcaption {
+    text-align: center;
+    font-size: 14px;
+}
+
+.card header figcaption {
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.card {
+    margin-bottom: 50px;
+    padding: 30px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card h2 {
+    color:#3a74c9;
+    font-size: 24px;
+}
+
+.card h3 {
+    color:#3a74c9;
+    font-size: 18px;
+}
+
+
+
+
+footer {
+    padding: 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: #3a74c9;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 576px) {
+
+    .jumbotron  {
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3.5rem;
+    }
+    
+    nav li a {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .profil-img {
+        width: 200px;
+        height: auto;
+    }
+
+    .card h2 {
+        font-size: 30px;
+    }
+
+    .card h3 {
+        font-size: 24px;
+    }
+
+    .card p {
+        font-size: 16px;
+        text-align: flex-start;
+    }
+
+    footer {
+        padding: 18px;
+        margin-top: 120px;
+        font-size: 12px;
+    }
+}
